@@ -1,13 +1,11 @@
-# Book_Mgmt_FastAPI
-
 Book Management System Using FastAPI
 
-
-Introduction
+**Introduction**
 
 The Book Management System is a web-based application built with FastAPI. It allows users to manage a collection of books, providing CRUD (Create, Read, Update, Delete) functionality. The application is powered by a MySQL database and follows modern development practices using Pydantic models for validation and SQLAlchemy for database interactions.
 
 
+**Features**
 
 Core Functionalities
 
@@ -18,36 +16,44 @@ Core Functionalities
 - Delete Books : Remove books from the database permanently using their ID.
 
 
-
-__Data Validation and Security__
+**Data Validation and Security**
 
 - Input validation using Pydantic models ensures data integrity.
 - Database interactions are managed using SQLAlchemy, preventing SQL injection attacks.
 
 
+**Technology Stack**
 
-__Technology Stack__
+- Backend
+  FastAPI: For building the API endpoints.
+  SQLAlchemy: ORM for database interactions.
+  Pydantic: For data validation and schema definitions.
 
-- Backend FastAPI: For building the API endpoints. SQLAlchemy: ORM for database interactions. Pydantic: For data validation and schema definitions.
-- Database MySQL: Stores book information in a relational structure.
-- Development Environment Python 3.8+ required.
+- Database
+  MySQL: Stores book information in a relational structure.
 
+- Development Environment
+  Python 3.8+ required.
 
+**Installation and Setup**
 
-__Installation and Setup__
+**Prerequisites**
+   Python 3.8+
+   MySQL Database
+   pip package manager
 
-- Prerequisites Python 3.8+ MySQL Database pip package manager
-
-- Steps to Run Locally
-
-  1. Clone the repository:
-
-      - Install dependencies: pip install fastapi sqlalchemy pymysql uvicorn
-
-  2. Set up the database: Create a MySQL database named book_management. Update the DATABASE_URL in the code to reflect your credentials.
-
-  3. Run the application: > uvicorn main:app --reload
-
-  4. Test the functions using POSTMAN
+**Steps to Run Locally**
  
-     
+1. Clone the repository:
+
+2. Install dependencies:
+    pip install fastapi sqlalchemy pymysql uvicorn
+
+4. Set up the database:
+   Create a MySQL database named book_management.
+   Update the DATABASE_URL in the code to reflect your credentials.
+
+5. Run the application:
+    uvicorn main:app --reload
+
+6. Test the functions using POSTMAN
